@@ -1,0 +1,37 @@
+[
+  {
+    "Text": "What was the name of Jonathan Joestar's only son?",
+    "Answers": ["George II", "Giorno", "Josuke", "Brutus"],
+    "CorrectAnswer": 0
+  },
+  {
+    "Text": "What is Lisa Lisa's relationship to Joseph Joestar?",
+    "Answers": [ "Friend", "Sister", "Mother", "Girlfriend" ],
+    "CorrectAnswer": 2
+  },
+  {
+    "Text": "What do most of the stands in part 3 take their name from?",
+    "Answers": [ "Egyptian Gods", "Tarot Cards", "Singers", "Greek Gods" ],
+    "CorrectAnswer": 1
+  },
+  {
+    "Text": "Who is responsible for the stand arrow arriving in Morioh?",
+    "Answers": [ "Diavolo", "Joseph", "Hol Horse", "Dio" ],
+    "CorrectAnswer": 3
+  },
+  {
+    "Text": "In part 5, who left the main group when they decided to go against Diavolo?",
+    "Answers": [ "Narancia", "Fugo", "Abbacchio", "Mista" ],
+    "CorrectAnswer": 1
+  },
+  {
+    "Text": "In part 6, who was the only one left alive from the main cast at the end?",
+    "Answers": [ "Emporio", "Ermes", "F.F.", "Anasui" ],
+    "CorrectAnswer": 0
+  },
+  {
+    "Text": "What is the president trying to get in part 7?",
+    "Answers": [ "A Huge Fortune", "Immortality", "World Domination", "The Corpse of Jesus Christ" ],
+    "CorrectAnswer": 3
+  }
+]

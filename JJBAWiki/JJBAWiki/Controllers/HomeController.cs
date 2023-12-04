@@ -18,6 +18,41 @@ namespace JJBAWiki.Controllers
             return View();
         }
 
+        public IActionResult Part1()
+        {
+            return View();
+        }
+
+        public IActionResult Part2()
+        {
+            return View();
+        }
+
+        public IActionResult Part3()
+        {
+            return View();
+        }
+
+        public IActionResult Part4()
+        {
+            return View();
+        }
+
+        public IActionResult Part5()
+        {
+            return View();
+        }
+
+        public IActionResult Part6()
+        {
+            return View();
+        }
+
+        public IActionResult Part7()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
