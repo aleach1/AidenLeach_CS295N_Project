@@ -13,10 +13,11 @@
             @for (int j = 0; j < Model.Questions[i].Answers.Count; j++)
             {
                 <div class="form-check">
-                <input class="form-check-input" asp-for="@Model.Questions[i].UserAnswer" type="radio" name="@($"Questions[{i}].UserAnswerIndex")" id="@($"Questions_{i}__UserAnswerIndex_{j}")" value="@j" />
-                <label class="form-check-label" for="@($"Questions_{i}__UserAnswerIndex_{j}")">@Model.Questions[i].Answers[j]</label>
+                <input class="form-check-input" asp-for="@Model.Questions[i].UserAnswer" type="radio" name="@($"Questions[{i}].UserAnswer")" id="@($"Questions_{i}__UserAnswer_{j}")" value="@j" required />
+                <label class="form-check-label" for="@($"Questions_{i}__UserAnswer_{j}")">@Model.Questions[i].Answers[j]</label>
                 </div>
             }
+            <br/>
         </div>
     }
 
@@ -28,13 +29,17 @@
 
 @if (ViewData["Checked"] as bool? == true)
 {
+    <br /><br />
     <div>
+        <h2 class="text-decoration-underline">You got @ViewData["Score"] out of @Model.Questions.Count correct!</h2>
+        <br />
         @foreach (var question in Model.Questions)
         {
-            <p class="@(question.IsCorrect ? "question-correct" : "question-incorrect")">
-                @question.Text - @(question.IsCorrect ? "Correct" : "Incorrect")
+            <p>@question.Text - 
+                <div class="@(question.IsCorrect ? "text-success" : "text-danger")">
+                    @(question.IsCorrect ? "Correct" : "Incorrect")
+                </div>
             </p>
         }
-        <h2>You got @ViewData["Score"] out of @Model.Questions.Count correct!</h2>
     </div>
 }
